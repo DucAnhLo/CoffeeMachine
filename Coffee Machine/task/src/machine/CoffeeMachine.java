@@ -19,10 +19,14 @@ public class CoffeeMachine {
         System.out.println(cupOfCoffee * milkNeeded + " ml of milk");
         System.out.println(cupOfCoffee * coffeeBeansNeeded + " g of coffee beans");
 
-        System.out.println("Hello GitHub");
+        System.out.println("Write how many ml of water the coffee machine has: ");
+        int coffeeMachineHave = scanner.nextInt();
+        System.out.println("Write how many ml of milk the coffee machine has: ");
+        int milkMachineHave = scanner.nextInt();
+        System.out.println("Write how many ml of water the coffee machine has: ");
+        int waterMachineHave = scanner.nextInt();
+        System.out.println("Write how many ml of water the coffee machine has: ");
+        int cupsMachineMake = scanner.nextInt();
 
-        System.out.println("Coded in PC");
-
-
-    }
+  }
 }
