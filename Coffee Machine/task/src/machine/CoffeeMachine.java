@@ -19,7 +19,7 @@ public class CoffeeMachine {
         System.out.println(cupOfCoffee * milkNeeded + " ml of milk");
         System.out.println(cupOfCoffee * coffeeBeansNeeded + " g of coffee beans");
 
-
+        System.out.println("Hello GitHub");
 
 
     }
