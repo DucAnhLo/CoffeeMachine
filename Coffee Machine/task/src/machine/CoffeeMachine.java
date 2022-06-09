@@ -20,13 +20,38 @@ public class CoffeeMachine {
         System.out.println(cupOfCoffee * coffeeBeansNeeded + " g of coffee beans");
 
         System.out.println("Write how many ml of water the coffee machine has: ");
-        int coffeeMachineHave = scanner.nextInt();
+        int waterMachineHave = scanner.nextInt();
         System.out.println("Write how many ml of milk the coffee machine has: ");
         int milkMachineHave = scanner.nextInt();
         System.out.println("Write how many ml of water the coffee machine has: ");
-        int waterMachineHave = scanner.nextInt();
-        System.out.println("Write how many ml of water the coffee machine has: ");
+        int coffeeGMachineHave = scanner.nextInt();
+        System.out.println("Write how many cups: ");
         int cupsMachineMake = scanner.nextInt();
 
-  }
+        int cupsCanMake = 0;
+
+        if(waterMachineHave == waterNeeded && milkMachineHave == milkNeeded && coffeeGMachineHave == coffeeBeansNeeded){
+            cupsCanMake = 1;
+        }else {
+            while(waterMachineHave >= waterNeeded && milkMachineHave >= milkNeeded && coffeeGMachineHave >= coffeeBeansNeeded){
+                cupsCanMake++;
+                waterMachineHave -=waterNeeded;
+                milkMachineHave -= milkNeeded;
+                coffeeGMachineHave -= coffeeBeansNeeded;
+            }
+        }
+
+        int cupsOfCoffeeLeft = cupsCanMake - cupsMachineMake;
+
+        if (cupsOfCoffeeLeft ==0){
+            System.out.println("Yes, I can make that amount of coffee");
+        }else if (cupsCanMake > cupsMachineMake) {
+            System.out.println("Yes, I can make that amount of coffee (and even " + cupsOfCoffeeLeft + " than that)");
+        } else if (cupsMachineMake > cupsCanMake) {
+            System.out.println("No, I can make only " + cupsCanMake +  " cup(s) of coffee");
+        }
+
+
+
+    }
 }

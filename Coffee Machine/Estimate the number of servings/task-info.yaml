@@ -182,5 +182,17 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5331#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Error in test #1\n\nProgram ran out of input. You tried to read more than\
+    \ expected.\n\nPlease find below the output of your program during this failed\
+    \ test.\nNote that the &#39;&gt;&#39; character indicates the beginning of the\
+    \ input line.\n\n---\n\nStarting to make a coffee\nGrinding coffee beans\nBoiling\
+    \ water\nMixing boiled water with crushed coffee beans\nPouring coffee into the\
+    \ cup\nPouring some milk into the cup\nCoffee is ready!\nNumber of cups: \n&gt;\
+    \ 300\nFor 300 cups of coffee you will need: \n60000 ml of water\n15000 ml of\
+    \ milk\n4500 g of coffee beans\nWrite how many ml of water the coffee machine\
+    \ has: \n&gt; 65\nWrite how many ml of milk the coffee machine has: \n&gt; 111\n\
+    Write how many ml of water the coffee machine has: \n&gt; 1\nWrite how many cups:"
+  time: Thu, 09 Jun 2022 19:09:47 UTC
 record: -1
