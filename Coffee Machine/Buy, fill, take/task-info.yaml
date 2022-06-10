@@ -361,5 +361,18 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5332#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Exception in test #1\n\nProbably you have nextInt() (or similar Scanner\
+    \ method) followed by nextLine() - in this situation nextLine() often gives an\
+    \ empty string and another one nextLine() call gives correct string.\n\njava.util.InputMismatchException\r\
+    \n\tat java.base/java.util.Scanner.throwFor(Scanner.java:939)\r\n\tat java.base/java.util.Scanner.next(Scanner.java:1594)\r\
+    \n\tat java.base/java.util.Scanner.nextInt(Scanner.java:2258)\r\n\tat java.base/java.util.Scanner.nextInt(Scanner.java:2212)\r\
+    \n\tat machine.CoffeeMachine.main(CoffeeMachine.java:17)\n\nPlease find below\
+    \ the output of your program during this failed test.\nNote that the &#39;&gt;&#39;\
+    \ character indicates the beginning of the input line.\n\n---\n\nStarting to make\
+    \ a coffee\nGrinding coffee beans\nBoiling water\nMixing boiled water with crushed\
+    \ coffee beans\nPouring coffee into the cup\nPouring some milk into the cup\n\
+    Coffee is ready!\nNumber of cups: \n&gt; take"
+  time: Fri, 10 Jun 2022 19:12:58 UTC
 record: -1
