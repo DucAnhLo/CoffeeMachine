@@ -1,7 +1,7 @@
-package HelloWorld;
+package machine;
 import java.util.Scanner;
 
-public class HelloWorld {
+public class CoffeeMachine {
     public static void main(String[] args) {
 
         //Task 1
@@ -79,7 +79,7 @@ public class HelloWorld {
             }
             switch (choice) {
                 case "buy":
-                    System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, 4- back - to main menu: ");
+                    System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, 4 - back to main menu: ");
                     String option = scanner.next();
                     if (choice.equals("4")) {
                         break;
